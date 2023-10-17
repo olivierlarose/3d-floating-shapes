@@ -33,18 +33,7 @@ export default function Index() {
 
   return (
     <Canvas style={{background: "#e0e0e2"}} orthographic camera={{position: [0, 0, 200], zoom: 10}}>
-        {/* <Lightformer
-          form="rect" // circle | ring | rect (optional, default = rect)
-          intensity={1} // power level (optional = 1)
-          color="white" // (optional = white)
-          scale={[10, 5]} // Scale it any way you prefer (optional = [1, 1])
-          target={[0, 0, 0]} // Target position (optional = undefined)
-        /> */}
-      {/* <ambientLight intensity={4} /> */}
-        {/* <CameraControls></CameraControls> */}
         <Model mouse={smoothMouse}/>
-        {/* <ambientLight intensity={1}/> */}
-        {/* <directionalLight position={[2, 1, 1]}/> */}
         <Environment preset="studio"/>
     </Canvas>
   )

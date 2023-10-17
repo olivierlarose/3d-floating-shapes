@@ -38,7 +38,6 @@ export default function Model({mouse}) {
 useGLTF.preload("/medias/floating_shapes4.glb");
 
 function Mesh({node, multiplier, mouse, isActive}) {
-  console.log("mesh", node)
   const { geometry, material, position, scale, rotation, receiveShadow, castShadow } = node;
   const a = multiplier / 2;
   const rotationX = useTransform(mouse.x, [0,1], [rotation.x - a, rotation.x + a]);
